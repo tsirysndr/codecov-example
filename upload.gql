@@ -1,0 +1,5 @@
+{
+  codecov {
+    upload(src: ".", token: "e29da3fa-00d3-4d87-9836-f4bf8d532348")
+  }
+}

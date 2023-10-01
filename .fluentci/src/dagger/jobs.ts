@@ -46,7 +46,11 @@ export const upload = async (src = ".", token?: string) => {
       }`,
     ]);
 
-  return "Uploaded to Codecov";
+  const result = await ctr.stdout();
+
+  console.log(result);
+
+  return "Codecov upload complete.";
 };
 
 export type JobExec = (src?: string) =>
